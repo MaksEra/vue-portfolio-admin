@@ -64,7 +64,8 @@ const AboutStore = {
     actions: {
         // Todo axios get post data-skills.json
         getSkillsJson(context) {
-            Api.getSkills().then(response => {
+            Api.getSkills()
+            .then(response => {
                 context.state.data = response;
             });
         },

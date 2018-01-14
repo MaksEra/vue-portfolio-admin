@@ -3,10 +3,18 @@ export const Api = {
     getSkills() {
         return axios.get('./src/store/data-skills.json')
             .then(function(response) {
+                console.log("response", response);
                 console.log('get json in about!');
                 return response.data;
             })
             .catch(e => { console.error(e); return []; });
+
+        // return axios.get('http://localhost:3000/api/skills')
+        // .then(function(response) {
+        //     console.log(response);
+        //     return response.data.skills;
+        // })
+        // .catch(e => { console.error(e); return []; });
     },
     postSkills(data) {
         console.log('post json from about!', data);
