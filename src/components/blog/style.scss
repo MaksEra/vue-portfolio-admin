@@ -1,0 +1,11 @@
+.blog {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding-top: 45px;
+}
+
+.blog-add {
+    height: 450px;
+}
+        

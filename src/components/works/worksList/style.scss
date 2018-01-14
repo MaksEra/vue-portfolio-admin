@@ -1,0 +1,38 @@
+.works-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    overflow-y: scroll;
+    max-height: 615px;
+    &::-webkit-scrollbar {
+        width: 8px;
+        background-color: $textColor;
+    }
+    &::-webkit-scrollbar-thumb {
+        width: 6px;
+        background-color: #fff;
+    }
+    &__table {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        transition: background-color 0.5s ease;
+        padding: 15px;
+        cursor: pointer;
+        position: relative;
+        &:hover {
+            background-color: #fff;
+        }
+    }
+    &__preview {
+        max-height: 150px;
+        max-width: 150px;
+    }
+    &__remove {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        z-index: 1;
+    }
+}
